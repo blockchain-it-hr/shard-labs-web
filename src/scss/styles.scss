@@ -26,6 +26,14 @@ p {
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  &--light {
+    background: #dedfe240;
+  }
+
+  &--dark {
+    background: $primary-color;
+  }
 }
 
 .banner {
