@@ -19,7 +19,7 @@ p {
 
   &--lg {
     padding-top: 6rem;
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
   }
 
   &--no-padding {
@@ -44,9 +44,6 @@ p {
   padding-top: 70px;
 }
 
-
-
-
 .navbar-transparent {
   position: absolute;
   z-index: 100;
@@ -67,22 +64,22 @@ p {
   background-color: $primary-color;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 
-  &:hover {
-    border-color: lighten($primary-color, 5%);
-    background-color: lighten($primary-color, 5%);
+  &:hover, &:active, &:focus {
+    border-color: $accent-color !important;
+    background-color: $accent-color !important;
   }
-  
 }
 
-.btn-secondary{
-  color: #fff;
-  border-color: $muted-color;
-  background-color: $muted-color;
+.btn-secondary {
+  color: #ffffff;
+  border-color: #f56644;
+  background-color: #f56644;
+  transition: all 0.2s ease-in-out;
 
-  &:hover {
-    border-color: darken($muted-color, 5%);
-    background-color: darken($muted-color, 5%);
-  }
+  &:hover, &:active, &:focus {
+    border-color: darken($primary-color, 5%) !important;
+    background-color: darken($primary-color, 5%) !important;
+  }  
 }
 
 .container {
@@ -91,7 +88,6 @@ p {
     position: relative
   }
 }
-
 
 #scroller {
   position: relative;
@@ -175,28 +171,14 @@ p {
   }
 }
 
+.bg--primary {
+  background: $primary-color;
+}
 
-#footer{
-  padding-top: 2rem;
-  background-color: $muted-color;
-  text-align: center;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: large;
-  color: #fff;
-  
-  li{
-    a{
-      color: #fff;
-      &:hover{
-        color:black;
-        transform: scale(1.1);
-        transition: all ease 500ms;
-        text-decoration: none;
-      }
-    }
-  }
+.bg--light {
+  background: #f8f9fb;
+}
 
-  .copyright{
-    list-style: none;
-  }
-} 
+.bg--dark {
+  background: #141920;
+}
