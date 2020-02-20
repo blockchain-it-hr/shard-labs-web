@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
 @import 'colors';
+@import 'mixins';
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -181,4 +182,22 @@ p {
 
 .bg--dark {
   background: #141920;
+}
+
+
+#about {
+  @include animation;
+}
+
+
+#services{
+  @include animation;
+}
+
+#contributions{
+  @include animation;
+}
+
+#careers{
+  @include animation;
 }
