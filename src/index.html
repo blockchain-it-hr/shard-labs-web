@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="scss/styles.scss">
 </head>
 
@@ -70,22 +71,22 @@
     <!-- About us -->
     <section class="section section--lg" id="about">
       <div class="container">
-        <h3 class="display-5 font-weight-bold text-center mb-4 show-on-scroll">About us</h3>
+        <h3 class="display-5 font-weight-bold text-center mb-4">About us</h3>
         <div class="row row-grid align-items-center">
-          <div class="col-md-8 order-md-1">
+          <div class="col-md-8 order-md-1" data-aos="fade-right" data-aos-duration="1000">
             <div class="mr-md-5">
-              <p class="lead mb-4 show-on-scroll">Profound tech knowledge coupled with business understanding is what allows us to
+              <p class="lead mb-4">Profound tech knowledge coupled with business understanding is what allows us to
                 create unique solutions that power enterprises, their employees, and
                 customers every day. We stick to the latest industry trends and quality requirements to deliver powerful
                 and secure software that fits corporate environments perfectly and brings positive user experience.</p>
-              <a class="btn btn-inline-block btn-primary btn-lg show-on-scroll" href="mailto:info@shardlabs.io">
-                <span class="font-weight-bold show-on-scroll">Contact us</span>
+              <a class="btn btn-inline-block btn-primary btn-lg" href="mailto:info@shardlabs.io">
+                <span class="font-weight-bold">Contact us</span>
                 <i class="fa fa-chevron-right align-middle ml-2"></i>
               </a>
             </div>
           </div>
-          <div class="col-md-4 order-md-2 p-3">
-            <img src="../assets/whiteboard.jpg" class="img-fluid floating rounded shadow-lg show-on-scroll" id="about-img">
+          <div class="col-md-4 order-md-2 p-3" data-aos="fade-left" data-aos-duration="2000">
+            <img src="../assets/whiteboard.jpg" class="img-fluid floating rounded shadow-lg" id="about-img">
           </div>
         </div>
       </div>
@@ -94,30 +95,30 @@
     <!-- Services -->
     <section class="section section--lg section--dark" id=services>
       <div class="container">
-        <h3 class="display-5 font-weight-bold text-center mb-4 text-white show-on-scroll">Services</h3>
+        <h3 class="display-5 font-weight-bold text-center mb-4 text-white">Services</h3>
         <div class="row no-gutters">
-          <div class="col-md-4 p-2">
+          <div class="col-md-4 p-2" data-aos="fade-up">
             <div class="d-flex flex-column align-items-center justify-content-center">
-              <img src="../assets/blockchain.svg" class="pt-2 img-fluid show-on-scroll" height="95px" width="95px">
-              <h4 class="font-weight-bold text-white pt-4 text-center show-on-scroll">Blockchain</h4>
-              <p class="lead text-white text-center px-4 mb-0 show-on-scroll">Blockchain Use Case & Technology Development, Custom Blockchain Development Services, Token Development.</p>
+              <img src="../assets/blockchain.svg" class="pt-2 img-fluid" height="95px" width="95px">
+              <h4 class="font-weight-bold text-white pt-4 text-center">Blockchain</h4>
+              <p class="lead text-white text-center px-4 mb-0">Blockchain Use Case & Technology Development, Custom Blockchain Development Services, Token Development.</p>
             </div>
           </div>
-          <div class="col-md-4 p-2">
+          <div class="col-md-4 p-2" data-aos="fade-up" data-aos-delay="200">
             <div class="d-flex flex-column align-items-center justify-content-center">
-              <img src="../assets/custom.svg" class="pt-2 img-fluid show-on-scroll" height="95px" width="95px">
-              <h4 class="font-weight-bold text-white pt-4 text-center show-on-scroll">Custom Development</h4>
-              <p class="lead text-white text-center px-4 mb-0 show-on-scroll">We develop intuitively usable, reliable custom software
+              <img src="../assets/custom.svg" class="pt-2 img-fluid" height="95px" width="95px">
+              <h4 class="font-weight-bold text-white pt-4 text-center">Custom Development</h4>
+              <p class="lead text-white text-center px-4 mb-0">We develop intuitively usable, reliable custom software
                 that is
                 tailored to your business needs.
               </p>
             </div>
           </div>
-          <div class="col-md-4 p-2">
+          <div class="col-md-4 p-2" data-aos="fade-up" data-aos-delay="400">
             <div class="d-flex flex-column align-items-center justify-content-center ">
-              <img src="../assets/ops.svg" class="pt-2 img-fluid show-on-scroll" height="95px" width="95px">
-              <h4 class="font-weight-bold text-white pt-4 text-center show-on-scroll">DevOps</h4>
-              <p class="lead text-white text-center px-4 mb-0 show-on-scroll">We believe in building at scale. Automatization and
+              <img src="../assets/ops.svg" class="pt-2 img-fluid" height="95px" width="95px">
+              <h4 class="font-weight-bold text-white pt-4 text-center">DevOps</h4>
+              <p class="lead text-white text-center px-4 mb-0">We believe in building at scale. Automatization and
                 continuous software delivery is part of our
                 software development lifecycle.</p>
             </div>
@@ -129,26 +130,78 @@
     <!-- Contributions -->
     <section class="section section--lg" id="contributions">
       <div class="container">
-        <h3 class="display-5 font-weight-bold text-center mb-4 show-on-scroll">Contributions</h3>
-        <div class="row no-gutters">
-          <div class="col-md-4 p-2">
-            <div class="d-flex flex-column align-items-center justify-content-center">
-              <img src="../assets/ethereum.svg" class="pt-2 img-fluid show-on-scroll">
-              <h4 class="font-weight-bold pt-4 text-center show-on-scroll">Ethereum</h4>
-            </div>
-          </div>
-          <div class="col-md-4 p-2">
-            <div class="d-flex flex-column align-items-center justify-content-center">
-              <img src="../assets/zoKrates.svg" class="pt-2 img-fluid show-on-scroll">
-              <h4 class="font-weight-bold pt-4 text-center show-on-scroll">ZoKrates</h4>
+        <h3 class="display-5 font-weight-bold text-center mb-5">Open Contributions</h3>
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-4 mb-4">
+            <div class="service-box">
+              <div class="service-box__icon">
+                <img src="../assets/remix.svg">
+              </div>
+              <h3 class="service-box__title">Remix</h3>
+              <p class="service-box__description">
+                Remix is a browser-based compiler and IDE that enables users to build Ethereum contracts with Solidity
+                language and to debug transactions. We're proud crafters of ZoKrates Remix plugin.
               </p>
             </div>
           </div>
-          <div class="col-md-4 p-2">
-            <div class="d-flex flex-column align-items-center justify-content-center">
-              <img src="../assets/hyperledger.svg" class="pt-2 img-fluid show-on-scroll">
-              <h4 class="font-weight-bold  pt-4 text-center show-on-scroll">Hyperledger</h4>
+          <div class="col-md-4 mb-4">
+            <div class="service-box">
+              <div class="service-box__icon">
+                <img src="../assets/zokrates.svg">
+              </div>
+              <h3 class="service-box__title">ZoKrates</h3>
+              <p class="service-box__description">
+                ZoKrates is a toolbox for zkSNARKs on Ethereum. It includes an easy-to-use domain-specific language for
+                developers to leverage the power of zero-knowledge proofs in their decentralized applications.
+              </p>
             </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="service-box">
+              <div class="service-box__icon">
+                <img src="../assets/ethereum.svg">
+              </div>
+              <h3 class="service-box__title">solc.js</h3>
+              <p class="service-box__description">
+                JavaScript bindings for the Solidity compiler (contract-oriented programming language). Smaller and
+                faster alternative to solc for browser-only
+                environments.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="service-box">
+              <div class="service-box__icon">
+                <img src="../assets/ethereum.svg">
+              </div>
+              <h3 class="service-box__title">source-verify</h3>
+              <p class="service-box__description">
+                Solidity re-compiler used to verify that Ethereum contract bytecode corresponds to certain source code.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="service-box">
+              <div class="service-box__icon">
+                <img src="../assets/ink.svg">
+              </div>
+              <h3 class="service-box__title">ink!</h3>
+              <p class="service-box__description">
+                ink! is a Rust-based embedded domain specific language (eDSL) for writing Wasm smart contracts
+                specifically for Substrate-powered blockchains. We're proud crafters of ink! Remix plugin.
+              </p>
+             </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="service-box">
+              <div class="service-box__icon">
+                <img src="../assets/factory.png">
+              </div>
+              <h3 class="service-box__title">Factory Work Optimization</h3>
+              <p class="service-box__description">
+                Private Ethereum network implementation that runs on Raspberry PI devices with interface for factory workers.
+              </p>
+             </div>
           </div>
         </div>
       </div>
@@ -157,26 +210,26 @@
     <!-- Careers -->
     <section class="section section--lg section--dark" id="careers">
       <div class="container">
-        <h3 class="display-5 font-weight-bold text-center mb-4 text-white show-on-scroll">Careers</h3>
+        <h3 class="display-5 font-weight-bold text-center mb-4 text-white">Careers</h3>
         <div class="row grid">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-right">
             <div class="d-flex align-items-center h-100">
               <div id="wrapper">
-                <h1 class="display-5 font-weight-bold mb-4 text-white show-on-scroll">Join us in shaping the future.</h1>
-                <p class="lead mb-4 text-white show-on-scroll">
+                <h1 class="display-5 font-weight-bold mb-4 text-white">Join us in shaping the future.</h1>
+                <p class="lead mb-4 text-white">
                   We would like to see your talent and guide you along the way. We are always looking for
                   talented and ambitious people.
                 </p>
-                <a class="btn btn-inline-block btn-secondary btn-lg show-on-scroll" href="mailto:info@shardlabs.io">
+                <a class="btn btn-inline-block btn-secondary btn-lg" href="mailto:info@shardlabs.io">
                   <span class="font-weight-bold">Contact</span>
                   <i class="fa fa-chevron-right align-middle ml-2"></i>
                 </a>
               </div>
             </div>
           </div>
-          <div class=col-md-6 order--md-2>
+          <div class="col-md-6" data-aos="fade-left">
             <div class="p-4">
-              <img src="../assets/teamart.png" class="img-fluid floating show-on-scroll">
+              <img src="../assets/teamart.png" class="img-fluid floating">
             </div>
           </div>
         </div>
@@ -185,11 +238,11 @@
 
     <footer class="bg--dark py-3">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="">
+        <div class="d-flex flex-column justify-content-center align-items-center p-2">
+          <div class="mb-2">
             <img src="../assets/logo.png">
           </div>
-          <div class="text-muted pl-5">Shard Labs d.o.o, Palinovečka 49, 10000 Zagreb, Croatia</div>
+          <div class="text-muted">Shard Labs d.o.o, Palinovečka 49, 10000 Zagreb, Croatia</div>
         </div>
       </div>
     </footer>
@@ -199,7 +252,11 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="show-on-scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
