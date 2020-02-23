@@ -21,31 +21,21 @@
         <div class="navbar-collapse collapse">
           <ul class="navbar-nav align-items-lg-center font-weight-bold">
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <span class="nav-link-inner--text">Home</span>
-              </a>
+              <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link">
-                <span class="nav-link-inner--text">About us</span>
-              </a>
+              <a href="#about" class="nav-link">About us</a>
             </li>
             <li class="nav-item">
-              <a href="#services" class="nav-link">
-                <span class="nav-link-inner--text">Services</span>
-              </a>
+              <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="#projects" class="nav-link">
-                <span class="nav-link-inner--text">Projects</span>
-              </a>
+              <a href="#projects" class="nav-link">Projects</a>
             </li>
           </ul>
           <ul class="navbar-nav align-items-lg-center ml-lg-auto font-weight-bold">
             <li class="nav-item">
-              <a href="#careers" class="nav-link">
-                <span class="nav-link-inner--text">Careers</span>
-              </a>
+              <a href="#careers" class="nav-link">Careers</a>
             </li>
           </ul>
         </div>
@@ -55,10 +45,15 @@
   <main role="main">
     <section class="section section--no-padding">
       <div class="banner">
+        <div class="video-container">
+            <video autoplay muted loop>
+              <source src="../assets/loop.webm" type="video/webm">
+            </video>
+        </div>
         <div class="container d-flex flex-column align-items-center justify-content-center animated flipInX">
-          <h1 class="display-4 font-weight-bold text-white">Software to power your business.</h1>
+          <h1 class="display-4 font-weight-bold text-center text-white">Software to power your business.</h1>
           <p class="lead text-white text-center w-75">Straightforward solutions to complex business challenges.</p>
-          <div class="container" id=scroller>
+          <div class="container" id="scroller">
             <div class="chevron"></div>
             <div class="chevron"></div>
             <div class="chevron"></div>
@@ -67,9 +62,8 @@
         </div>
       </div>
     </section>
-
     <!-- About us -->
-    <section class="section section--lg" id="about">
+    <section class="section section--lg section--light" id="about">
       <div class="container">
         <h3 class="display-5 font-weight-bold text-center mb-4">About us</h3>
         <div class="row row-grid align-items-center">
@@ -128,7 +122,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="section section--lg" id="projects">
+    <section class="section section--lg section--light" id="projects">
       <div class="container">
         <h3 class="display-5 font-weight-bold text-center mb-5">Recent Projects</h3>
         <div class="row" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
@@ -242,7 +236,7 @@
           <div class="mb-2">
             <img src="../assets/logo.png">
           </div>
-          <div class="text-muted">Shard Labs d.o.o, Palinovečka 49, 10000 Zagreb, Croatia</div>
+          <div class="text-center text-muted">Shard Labs d.o.o, Palinovečka 49, 10000 Zagreb, Croatia</div>
         </div>
       </div>
     </footer>
