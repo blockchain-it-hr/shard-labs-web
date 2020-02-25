@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
-
-$primary-color: #242e3b;
-$muted-color: #646f7d;
+@import 'colors';
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -16,6 +14,8 @@ p {
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  line-height: 1.6;
+  color: $primary-color;
 
   &--lg {
     padding-top: 6rem;
@@ -28,7 +28,7 @@ p {
   }
 
   &--light {
-    background: #dedfe240;
+    background: #fff;
   }
 
   &--dark {
@@ -37,11 +37,24 @@ p {
 }
 
 .banner {
+  position: relative;
   display: flex;
-  width: 100%;
-  height: 950px;
-  background: linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../../assets/entrepreneur.jpg') no-repeat 50% fixed;
-  padding-top: 70px;
+  height: 100vh;
+  background: #00061e;
+
+  .video-container {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    overflow: hidden;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 .navbar-transparent {
@@ -64,8 +77,165 @@ p {
   background-color: $primary-color;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 
+  &:hover, &:active, &:focus {
+    border-color: $accent-color !important;
+    background-color: $accent-color !important;
+  }
+}
+
+.btn-secondary {
+  color: #ffffff;
+  border-color: #f56644;
+  background-color: #f56644;
+  transition: all 0.2s ease-in-out;
+
+  &:hover, &:active, &:focus {
+    border-color: darken($primary-color, 5%) !important;
+    background-color: darken($primary-color, 5%) !important;
+  }  
+}
+
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1350px;
+    position: relative
+  }
+}
+
+#scroller {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+.bg--primary {
+  background: $primary-color;
+}
+
+.bg--light {
+  background: #f8f9fb;
+}
+
+.bg--dark {
+  background: #070b0f;
+}
+
+.service-box {
+  display: block;
+  padding: 30px 30px 30px 100px;
+  background: $secondary-color;
+  color: $primary-color;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  transition: all 0.3s ease-in-out 0s;
+
   &:hover {
-    border-color: lighten($primary-color, 5%);
-    background-color: lighten($primary-color, 5%);
+    transform: translateY(-6px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1)!important;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+
+    img {
+      height: inherit;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+  }
+
+  &__description {
+    font-size: 15px;
+    color: $muted-color;
+    line-height: 25px;
+    margin: 0;
+    transition: all 0.3s ease-in-out 0s;
   }
 }
